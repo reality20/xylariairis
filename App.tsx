@@ -97,7 +97,7 @@ export default function App() {
     setImagesToEdit(prev => {
       const newImages = [...prev];
       const removedImage = newImages.splice(index, 1)[0];
-      URL.revokeObjectURL(removedImage.url); // Clean up object URL
+      URL.revokeObjectURL(removedImage.url); // Clean up object URL  o
       return newImages;
     });
   };
